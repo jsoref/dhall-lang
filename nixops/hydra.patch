@@ -1,7 +1,7 @@
-diff --git a/src/lib/Hydra/Plugin/GithubPulls.pm b/src/lib/Hydra/Plugin/GithubPulls.pm
+diff --git a/src/lib/Hydra/Plugin/GitHubPulls.pm b/src/lib/Hydra/Plugin/GitHubPulls.pm
 index be3ae53b..cf36b16b 100644
---- a/src/lib/Hydra/Plugin/GithubPulls.pm
-+++ b/src/lib/Hydra/Plugin/GithubPulls.pm
+--- a/src/lib/Hydra/Plugin/GitHubPulls.pm
++++ b/src/lib/Hydra/Plugin/GitHubPulls.pm
 @@ -6,6 +6,7 @@ use HTTP::Request;
  use LWP::UserAgent;
  use JSON;
@@ -45,11 +45,11 @@ index be3ae53b..cf36b16b 100644
      my $tempdir = File::Temp->newdir("github-pulls" . "XXXXX", TMPDIR => 1);
      my $filename = "$tempdir/github-pulls.json";
      open(my $fh, ">", $filename) or die "Cannot open $filename for writing: $!";
-diff --git a/src/lib/Hydra/Plugin/GithubStatus.pm b/src/lib/Hydra/Plugin/GithubStatus.pm
+diff --git a/src/lib/Hydra/Plugin/GitHubStatus.pm b/src/lib/Hydra/Plugin/GitHubStatus.pm
 index 08ba25bb..5b8742a3 100644
---- a/src/lib/Hydra/Plugin/GithubStatus.pm
-+++ b/src/lib/Hydra/Plugin/GithubStatus.pm
-@@ -2,6 +2,7 @@ package Hydra::Plugin::GithubStatus;
+--- a/src/lib/Hydra/Plugin/GitHubStatus.pm
++++ b/src/lib/Hydra/Plugin/GitHubStatus.pm
+@@ -2,6 +2,7 @@ package Hydra::Plugin::GitHubStatus;
  
  use strict;
  use parent 'Hydra::Plugin';

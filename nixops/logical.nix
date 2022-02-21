@@ -374,7 +374,7 @@ in
 
                 in {
                   locations."/cors/AllowedAll.dhall".extraConfig = cors-endpoint "*" "42";
-                  locations."/cors/OnlyGithub.dhall".extraConfig = cors-endpoint "https://raw.githubusercontent.com" "42";
+                  locations."/cors/OnlyGitHub.dhall".extraConfig = cors-endpoint "https://raw.githubusercontent.com" "42";
                   locations."/cors/OnlySelf.dhall".extraConfig = cors-endpoint "https://test.dhall-lang.org" "42";
                   locations."/cors/OnlyOther.dhall".extraConfig = cors-endpoint "https://example.com" "42";
                   locations."/cors/Empty.dhall".extraConfig = cors-endpoint "" "42";
@@ -390,7 +390,7 @@ in
                   locations."/cors/TwoHopsFail.dhall".extraConfig =
                     cors-endpoint "*" "https://raw.githubusercontent.com/dhall-lang/dhall-lang/5ff7ecd2411894dd9ce307dc23020987361d2d43/tests/import/data/cors/OnlySelf.dhall";
                   locations."/cors/TwoHopsSuccess.dhall".extraConfig =
-                    cors-endpoint "*" "https://raw.githubusercontent.com/dhall-lang/dhall-lang/5ff7ecd2411894dd9ce307dc23020987361d2d43/tests/import/data/cors/OnlyGithub.dhall";
+                    cors-endpoint "*" "https://raw.githubusercontent.com/dhall-lang/dhall-lang/5ff7ecd2411894dd9ce307dc23020987361d2d43/tests/import/data/cors/OnlyGitHub.dhall";
                 })
               ];
         };

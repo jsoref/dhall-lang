@@ -1,1 +1,1 @@
-https://test.dhall-lang.org/cors/OnlyGithub.dhall
+https://test.dhall-lang.org/cors/OnlyGitHub.dhall
